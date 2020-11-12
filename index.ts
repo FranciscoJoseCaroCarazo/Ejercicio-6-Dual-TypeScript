@@ -4,6 +4,7 @@
 // En el constructor de "Developer", debéis añadir los parámetros al constructor de la clase padre (super) y setear la propiedad "bestLanguage" sabiendo que es de tipo función que recibe una cadena.
 // Cuando acabéis, debéis descomentar las siguientes líneas de código y colocarlas despúes de todo lo que añadáis:
 
+//Se crea la clase Person con sus atributos, constructor y metodos
 class Person {
   private name: string;
   private age: number;
@@ -20,6 +21,7 @@ class Person {
   }
 }
 
+//se crea la clase Develop que extiende de Person
 class Developer extends Person {
   public bestLanguage: (func: string) => void;
 
@@ -34,6 +36,7 @@ class Developer extends Person {
   }
 }
 
+//Codigo ya proporcionado que crea un Developer y utiliza las diferentes funciones para mostrar por consola las cadenas de texto
 const developer = new Developer(
   "pedro",
   35,
